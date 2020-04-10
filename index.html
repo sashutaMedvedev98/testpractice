@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
       <div class="navigation">
@@ -28,6 +30,7 @@
         </div>
       </div>
       <div class="banner">
+        <div class="container">
           <div class="slider">
             <div class="slider-button__left"><</div>
             <div class="slider-img active"><img src="img/slide-1.jpg" alt=""></div>
@@ -35,6 +38,7 @@
             <div class="slider-img "><img src="img/slide-3.jpg" alt=""></div>
             <div class="slider-button__right">></div>
           </div>
+        </div>
       </div>
       <div id="sale" class="sale">
         <div class="container">
@@ -44,31 +48,31 @@
               Выгодные предложения!
             </div>
             <div class="sale-block__body">
-              Узнай первым о выгодных предложениях!
+              Заключи договор Т/О до 31.01.2020г. и получи скидку в размере 10% до конца года!
             </div>
           </div>
           <div class="sale-block">
             <div class="sale-block__header">
-              Выгодные предложения!
+              Спец предложение по кондиционерам
             </div>
             <div class="sale-block__body">
-              Узнай первым о выгодных предложениях!
+              Купи кондиционер до 31.01.2020г. и получи скидку в размере 50%  на монтажные работы
             </div>
           </div>
           <div class="sale-block">
             <div class="sale-block__header">
-              Выгодные предложения!
+              Спец предложение канцелярия
             </div>
             <div class="sale-block__body">
-              Узнай первым о выгодных предложениях!
+              До 31.01.2020г. при покупке канцелярии на сумму 10000 рублей, получи специальную цену на бумагу А4 формата 210 рублей!
             </div>
           </div>
           <div class="sale-block">
             <div class="sale-block__header">
-              Выгодные предложения!
+              Найдется всё
             </div>
             <div class="sale-block__body">
-              Узнай первым о выгодных предложениях!
+              Более 25000 товарных позиций - от карандаша до самых современных технических печатных комплексов а так же климатических систем доставим и внедрим для Вас!
             </div>
           </div>
         </div>
@@ -78,29 +82,29 @@
           <h1>Каталог</h1>
             <div class="catalog-list">
               <div class="row">
-                <div class="catalog-list__element">
+                <div id="openPopUp1" class="catalog-list__element">
                   <img src="img/conditioners.jpg" alt="">
-                  <a href="#">Кондиционеры</a>
+                  <div class="text" >Кондиционеры</div>
                 </div>
-                <div class="catalog-list__element">
+                <div id="openPopUp2" class="catalog-list__element">
                   <img src="img/heaters.png" alt="">
-                  <a href="#">Бытовые водонагреватели</a>
+                  <div class="text" >Бытовые водонагреватели</div>
                 </div>
-                <div class="catalog-list__element">
+                <div id="openPopUp3" class="catalog-list__element">
                   <img src="img/electricHeatGuns.png" alt="">
-                  <a href="#">Электрические тепловые пушки</a>
+                  <div class="text">Электрические тепловые пушки</div>
                 </div>
-                <div class="catalog-list__element">
-                  <img src="img/electricHeatGuns.png" alt="">
-                  <a href="#">Электрические тепловые пушки</a>
+                <div id="openPopUp4" class="catalog-list__element">
+                  <img src="img/b4.jpg" alt="">
+                  <div class="text" >Бытовые обогреватели</div>
                 </div>
-                <div class="catalog-list__element">
-                  <img src="img/electricHeatGuns.png" alt="">
-                  <a href="#">Электрические тепловые пушки</a>
+                <div id="openPopUp5" class="catalog-list__element">
+                  <img src="img/bg1.jpg" alt="">
+                  <div class="text">Электро камины</div>
                 </div>
-                <div class="catalog-list__element">
-                  <img src="img/electricHeatGuns.png" alt="">
-                  <a href="#">Электрические тепловые пушки</a>
+                <div id="openPopUp6" class="catalog-list__element">
+                  <img src="img/bg2.png" alt="">
+                  <div class="text">Тепловые завесы</div>
                 </div>
               </div>
           </div>
@@ -167,13 +171,14 @@
               © Copyright. 2012 “ЯгуарСофт” Все права защищены
             </div>
             <div class="footer-feedback">
-              Обратная связь
+              <b>Телефон:   8 (3522) 662 222</b></br>
+              <b>e-mail:   paritet@paritet45.ru</b>
             </div>
          </div>
       </div>
       </footer>
       <script src="js/script.js" charset="utf-8"></script>
-      <div class="catalog-popup">
+      <div id="1" class="catalog-popup">
         <div class="catalog-popup__wrap">
             <div class="catalog-popup__block">
               <div class="catalog-popup__close">
@@ -192,6 +197,120 @@
                 <li>Умная самодиагностика</li>
               </ul>
               <h3>Цена: 20 000р </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="2" class="catalog-popup">
+        <div class="catalog-popup__wrap">
+            <div class="catalog-popup__block">
+              <div class="catalog-popup__close">
+                X
+              </div>
+              <div class="catalog-popup__img">
+              <img src="img/b2.jpg" alt="">
+            </div>
+              <div class="catalog-popup__text">
+              <h3>Stiebel Eltron DHC 8</h3>
+              <ul>
+                <li>Основные характеристики</li>
+                <li>Темп. нагрева, °С 60</li>
+                <li>Производительность 4.1</li>
+                <li>Мощность, кВт 8</li>
+                <li>Управление Гидравлическое</li>
+              </ul>
+              <h3>Цена: 23 900р </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="3" class="catalog-popup">
+        <div class="catalog-popup__wrap">
+            <div class="catalog-popup__block">
+              <div class="catalog-popup__close">
+                X
+              </div>
+              <div class="catalog-popup__img">
+              <img src="img/b3.png" alt="">
+            </div>
+              <div class="catalog-popup__text">
+              <h3>MASTER В-18EPR [B 18 EPR]</h3>
+              <ul>
+                <li>Основные характеристики</li>
+                <li>Мощность тепловая max: 18 кВт</li>
+                <li>Мощность тепловая min: 9 кВт</li>
+                <li>Производительность: 1700 м3/ч</li>
+                <li>Напряжение питания: 400 В</li>
+              </ul>
+              <h3>Цена: 44 600р </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="4" class="catalog-popup">
+        <div class="catalog-popup__wrap">
+            <div class="catalog-popup__block">
+              <div class="catalog-popup__close">
+                X
+              </div>
+              <div class="catalog-popup__img">
+              <img src="img/b5.jpg" alt="">
+            </div>
+              <div class="catalog-popup__text">
+              <h3>Конвектор Thermex Frame 2000E</h3>
+              <ul>
+                <li>Основные характеристики</li>
+                <li>Мощность обогрева макс. — 2 кВт</li>
+                <li>Площадь обогрева — 25 кв.м</li>
+                <li>Отключение при перегреве — есть</li>
+              </ul>
+              <h3>Цена: 4 750p.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="5" class="catalog-popup">
+        <div class="catalog-popup__wrap">
+            <div class="catalog-popup__block">
+              <div class="catalog-popup__close">
+                X
+              </div>
+              <div class="catalog-popup__img">
+              <img src="img/b6.jpg" alt="">
+            </div>
+              <div class="catalog-popup__text">
+              <h3>Встраиваемый очаг Standart 2000 (ZeFire)</h3>
+              <ul>
+                <li>Основные характеристики</li>
+                <li>Габариты ВхШхГ: 500х2000х300 мм</li>
+                <li>Материал: Сталь, окрашенная в порошковую огнеупорную краску</li>
+                <li>Возможная длина биокамина: Любая под заказ</li>
+                <li>Тип биокамина: Встраиваемый</li>
+              </ul>
+              <h3>Цена: 55 500р</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="6" class="catalog-popup">
+        <div class="catalog-popup__wrap">
+            <div class="catalog-popup__block">
+              <div class="catalog-popup__close">
+                X
+              </div>
+              <div class="catalog-popup__img">
+              <img src="img/b7.jpg" alt="">
+            </div>
+              <div class="catalog-popup__text">
+              <h3>Тепловая завеса NeoClima ТЗТ (серия)</h3>
+              <ul>
+                <li>Основные характеристики</li>
+                <li>Тип нагревателя: ТЭН</li>
+                <li>Высота проема (длина струи), м: 3</li>
+                <li>Ширина, мм: 1980</li>
+                <li>Мощность обогрева, кВт: 12</li>
+              </ul>
+              <h3>Цена: 22 170р </h3>
             </div>
           </div>
         </div>

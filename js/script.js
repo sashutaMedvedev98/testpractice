@@ -11,15 +11,18 @@ window.onload = function() {
   let popUp = document.getElementsByClassName('catalog-popup');
 
 
-  listElement.forEach((item, i) => {
-    item.addEventListener('click', function(){
-      popUp[0].classList.add("activePopUp");
-    })
-  });
+    for(let i = 0; i < listElement.length; i++) {
+      listElement[i].addEventListener('click', function(){
+        popUp[i].classList.add("activePopUp");
+      })
+    }
 
-  closePopUp[0].addEventListener('click', function(){
-    popUp[0].classList.remove("activePopUp");
-  })
+    for(let i = 0; i < closePopUp.length; i++) {
+      closePopUp[i].addEventListener('click', function(){
+        popUp[i].classList.remove("activePopUp");
+      })
+    }
+
 
 
   function Slider(images, activeImage) {
